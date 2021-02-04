@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "testSuite.ejercicioTest",
+    "children" : [ {
+      "name" : "metodo3",
+      "uid" : "73bf73faccfc2548",
+      "parentUid" : "f3b1ede97d3e9470ca4a1ecf0f1b1c4d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612397639375,
+        "stop" : 1612397639389,
+        "duration" : 14
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "testSuite.ejercicioTest"
+  } ]
+}

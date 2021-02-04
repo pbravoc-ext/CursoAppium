@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Default Suite",
+    "children" : [ {
+      "name" : "TestAppium",
+      "children" : [ {
+        "name" : "testSuite.ejercicioTest",
+        "children" : [ {
+          "name" : "metodo3",
+          "uid" : "73bf73faccfc2548",
+          "parentUid" : "8c9217c5e883d11f12f9054c0095e9c1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1612397639375,
+            "stop" : 1612397639389,
+            "duration" : 14
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "8c9217c5e883d11f12f9054c0095e9c1"
+      } ],
+      "uid" : "1667fce42209738d68f5651fd96bded5"
+    } ],
+    "uid" : "8399274b4bb69ec8699907dd6ef7de4e"
+  } ]
+}

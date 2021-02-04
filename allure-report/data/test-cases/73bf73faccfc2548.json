@@ -1,0 +1,110 @@
+{
+  "uid" : "73bf73faccfc2548",
+  "name" : "metodo3",
+  "fullName" : "testSuite.ejercicioTest.metodo3",
+  "historyId" : "9be8659aa49378874fcefabc48d4baff",
+  "time" : {
+    "start" : 1612397639375,
+    "stop" : 1612397639389,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "metodo2",
+    "time" : {
+      "start" : 1612397628417,
+      "stop" : 1612397639189,
+      "duration" : 10772
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "metodo1",
+    "time" : {
+      "start" : 1612397628396,
+      "stop" : 1612397628403,
+      "duration" : 7
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "metodo5",
+    "time" : {
+      "start" : 1612397639409,
+      "stop" : 1612397639409,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testSuite.ejercicioTest"
+  }, {
+    "name" : "testClass",
+    "value" : "testSuite.ejercicioTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "metodo3"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TestAppium"
+  }, {
+    "name" : "subSuite",
+    "value" : "testSuite.ejercicioTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-CROM0T6"
+  }, {
+    "name" : "thread",
+    "value" : "25104@DESKTOP-CROM0T6.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "73bf73faccfc2548.json",
+  "parameterValues" : [ ]
+}

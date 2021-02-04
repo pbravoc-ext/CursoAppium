@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-CROM0T6",
+    "children" : [ {
+      "name" : "25104@DESKTOP-CROM0T6.main(1)",
+      "children" : [ {
+        "name" : "metodo3",
+        "uid" : "73bf73faccfc2548",
+        "parentUid" : "e4a9de5f8fcfb9b892bdf65b7bfd6f61",
+        "status" : "passed",
+        "time" : {
+          "start" : 1612397639375,
+          "stop" : 1612397639389,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e4a9de5f8fcfb9b892bdf65b7bfd6f61"
+    } ],
+    "uid" : "12b5e9bfb93283baeb82aaf2c647a280"
+  } ]
+}
