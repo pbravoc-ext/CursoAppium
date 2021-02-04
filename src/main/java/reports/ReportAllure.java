@@ -7,8 +7,6 @@ import io.qameta.allure.model.StepResult;
 import org.openqa.selenium.OutputType;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
-
-import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -17,12 +15,12 @@ import java.util.UUID;
 
 public class ReportAllure {
     private  static SoftAssert softAssert = new SoftAssert();
-    public static void addStep(String nombreStep, boolean screenshot, Status status, boolean fatal){
+    public static void addStep(String nombreStep, Boolean screenshot, Status status, Boolean fatal){
         String uuid = UUID.randomUUID().toString();
         StepResult result = new StepResult().setDescription(nombreStep).setStatus(status);
         Allure.getLifecycle().startStep(uuid,result);
         if(screenshot){
-
+            reportScreenshot();
         }
         Allure.getLifecycle().stopStep(uuid);
         softAssert.assertTrue(true,nombreStep);

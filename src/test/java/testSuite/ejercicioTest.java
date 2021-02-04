@@ -1,48 +1,63 @@
 package testSuite;
 
-
-import io.appium.java_client.AppiumDriver;
 import io.qameta.allure.model.Status;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import reports.ReportAllure;
-
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
-
+import org.testng.asserts.SoftAssert;
+import testCases.CPA_BorrarCliente;
+import testCases.CPA_CrearCliente;
+import testCases.CPA_CrearProducto;
+import static driver.DriverContext.quitDriver;
 import static driver.DriverContext.setUp;
+import static reports.ReportAllure.addStep;
 
 public class ejercicioTest {
 
-    private AppiumDriver driver;
-    private URL server= null;
-    private DesiredCapabilities cap = new DesiredCapabilities();
+    SoftAssert softAssert = new SoftAssert();
 
     @BeforeSuite
-    public void metodo1(){
+    public void setUP(){
         System.out.println("Inicio de Suite");
-    }
-    @BeforeMethod
-    public void metodo2(){
-        System.out.println("Inicio de Test");
-    setUp("emuladorPablo","Android","D:\\Curso Appium\\registroDeUsuarios.apk","emuladorPablo", true);
-        ReportAllure.addStep("Inicio Dispositivo",true, Status.PASSED,false);
-
-    }
-    @Test (priority = 1)
-    public void metodo3(){
-        System.out.println("Test 1");
-    }
-    @Test (priority = 2)
-    public void metodo4(){
-        System.out.println("Test 2");
+        setUp("emuladorPablo","Android","D:\\Curso Appium\\registroDeUsuarios.apk","emuladorPablo", true);
+        addStep("Inicio Dispositivo",true, Status.PASSED,false);
     }
     @AfterMethod
-    public void metodo5(){
+     public void quitTest(){
+        addStep("Termino de Test",true, Status.PASSED,false);
         System.out.println("Termino de Test");
     }
+    @Test (priority = 1, description = "Crear Cliente")
+    public void CPA_CrearCliente(){
+        CPA_CrearCliente cpa = new CPA_CrearCliente();
+        System.out.println("Crear Cliente");
+        cpa.flujoIngresoCliente();
+    }
+
+    @Test (priority = 2, description = "Ingresar Producto")
+    public void CPA_CrearProducto(){
+        CPA_CrearProducto cpa = new CPA_CrearProducto();
+        System.out.println("Ingresar Producto");
+        cpa.flujoIngresoProducto();
+
+
+    }
+
+    @Test (priority = 3, description = "Borrar Cliente")
+    public void CPA_BorrarCliente(){
+        CPA_BorrarCliente cpa = new CPA_BorrarCliente();
+        System.out.println("Borrar Cliente");
+        cpa.flujoBorrarCliente();
+
+    }
+
+    @AfterSuite
+    public void quit(){
+        addStep("Termino de Test",true, Status.PASSED,false);
+        System.out.println("Termino de Test");
+        quitDriver();
+    }
+
+
 }

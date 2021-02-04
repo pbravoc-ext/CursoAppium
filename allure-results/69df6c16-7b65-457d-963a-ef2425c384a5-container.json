@@ -1,1 +1,0 @@
-{"uuid":"69df6c16-7b65-457d-963a-ef2425c384a5","name":"Default Suite","children":["722dc68f-d322-4394-83cd-4739adb3e80b"],"befores":[{"name":"metodo1","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1612401200278,"stop":1612401200285}],"afters":[],"links":[],"start":1612401200239,"stop":1612401211017}
